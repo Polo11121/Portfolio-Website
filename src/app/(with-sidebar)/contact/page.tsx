@@ -31,7 +31,7 @@ const ContactPage = () => (
       rel="noopener noreferrer"
     >
       <FaGithub size={32} />
-      <p>My github</p>
+      <p>My Github</p>
     </a>
     <a
       className="flex flex-row items-center gap-1 text-blue-500 font-bold underline hover:text-blue-700"
