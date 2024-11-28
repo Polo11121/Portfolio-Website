@@ -95,6 +95,14 @@ export const ADVANCED_skills = [
 
 export const PROJECTS = [
   {
+    title: "Refresh Token Auth Project",
+    image: "/refresh-token-auth-project.jpg",
+    githubLink: "https://github.com/Polo11121/React-Refresh-Access-Token-Auth",
+    applicationLink: "https://react-refresh-access-token-auth.vercel.app/",
+    description:
+      "An application designed to test authentication using refresh and access tokens, showcasing secure token management in React.",
+  },
+  {
     title: "Slack Clone",
     githubLink: "https://github.com/Polo11121/Next.js-Slack-Clone",
     description:
