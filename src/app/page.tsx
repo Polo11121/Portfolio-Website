@@ -26,8 +26,8 @@ const Home = () => (
         </div>
         <p className="leading-7 px-2 md:px-0 text-center md:text-start ">
           I&apos;m a <span className="font-bold">Frontend Developer</span> with
-          nearly 3 years of commercial experience, and I&apos;ve been learning
-          frontend development for about 4 years. I mostly work with{" "}
+          nearly 4 years of commercial experience, and I&apos;ve been learning
+          frontend development for about 5 years. I mostly work with{" "}
           <span className="font-bold">React</span> but have been diving into{" "}
           <span className="font-bold">Next.js </span>lately. I love picking up
           new tech skills, especially in the evenings with a big cup of coffee
