@@ -95,6 +95,14 @@ export const ADVANCED_skills = [
 
 export const PROJECTS = [
   {
+    title: "Gym Coach Monika",
+    description:
+      "A portfolio website showcasing the services and expertise of gym coach Monika, featuring her workout plans and client testimonials.",
+    image: "/gym-coach-monika.jpg",
+    applicationLink: "https://next-js-gym-trainer-site.vercel.app",
+    githubLink: "https://github.com/Polo11121/Next.js-gym-trainer-site",
+  },
+  {
     title: "Refresh Token Auth Project",
     image: "/refresh-token-auth-project.jpg",
     githubLink: "https://github.com/Polo11121/React-Refresh-Access-Token-Auth",
