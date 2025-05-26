@@ -18,13 +18,16 @@ import {
   PROJECTS_EN,
   PROJECTS_PL,
 } from "@/helpers/constants";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import "@/i18n/config";
 
 export const HomeView = () => {
   const { t, i18n } = useTranslation();
-  const currentProject =
+  const currentProject1 =
     i18n.language === "pl" ? PROJECTS_PL[0] : PROJECTS_EN[0];
+
+  const currentProject2 =
+    i18n.language === "pl" ? PROJECTS_PL[1] : PROJECTS_EN[1];
 
   return (
     <section className="container mx-auto flex flex-col justify-center items-center gap-10 md:gap-16 mt-4 md:mt-0">
@@ -32,14 +35,24 @@ export const HomeView = () => {
         <div className="flex items-center md:items-start flex-[0.6] flex-col gap-6 order-2 md:order-1">
           <div className="flex flex-col items-center md:items-start ">
             <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
-              {t("home.title")}
+              <Trans
+                i18nKey="home.title"
+                components={{ 1: <span className="font-extrabold" /> }}
+              />
             </h1>
             <h2 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl text-nowrap">
               {t("home.subtitle")}
             </h2>
           </div>
-          <p className="leading-7 px-2 md:px-0 text-center md:text-start ">
-            {t("home.description")}
+          <p className="leading-7 px-2 md:px-0 text-center md:text-start">
+            <Trans
+              i18nKey="home.description"
+              components={{
+                1: <span className="font-bold" />,
+                3: <span className="font-bold" />,
+                5: <span className="font-bold" />,
+              }}
+            />
           </p>
           <div className="flex gap-2.5">
             <Button size="lg" asChild>
@@ -75,20 +88,26 @@ export const HomeView = () => {
             </div>
           </div>
         </Section>
-
         <Section
           title={t("home.currentlyWorkingOn")}
           Icon={FaCode}
           className="max-w-[500px]"
         >
-          <ProjectCard
-            title={currentProject.title}
-            githubLink={currentProject.githubLink}
-            description={currentProject.description}
-            image={currentProject.image}
-          />
+          <div className="flex flex-col gap-4">
+            <ProjectCard
+              title={currentProject1.title}
+              githubLink={currentProject1.githubLink}
+              description={currentProject1.description}
+              image={currentProject1.image}
+            />
+            <ProjectCard
+              title={currentProject2.title}
+              githubLink={currentProject2.githubLink}
+              description={currentProject2.description}
+              image={currentProject2.image}
+            />
+          </div>
         </Section>
-
         <Section title={t("home.myResume")} Icon={IoDocumentTextOutline}>
           <Button asChild size="xl" className="mx-auto">
             <a

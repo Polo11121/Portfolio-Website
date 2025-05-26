@@ -1,8 +1,8 @@
 {
   "home": {
-    "title": "I'm Michał",
+    "title": "I'm <1>Michał</1>",
     "subtitle": "Frontend Developer",
-    "description": "I'm a Frontend Developer with nearly 4 years of commercial experience, and I've been learning frontend development for about 5 years. I mostly work with React but have been diving into Next.js lately. I love picking up new tech skills, especially in the evenings with a big cup of coffee by my side. My enthusiasm for learning keeps me excited about bringing new ideas to my projects.",
+    "description": "I'm a <1>Frontend Developer</1> with nearly 4 years of commercial experience, and I've been learning frontend development for about 5 years. I mostly work with <3>React</3> but have been diving into <5>Next.js</5> lately. I love picking up new tech skills, especially in the evenings with a big cup of coffee by my side. My enthusiasm for learning keeps me excited about bringing new ideas to my projects.",
     "contact": "Contact me",
     "github": "Github",
     "favoriteTechStack": "Favorite tech stack",

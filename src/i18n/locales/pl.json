@@ -1,8 +1,8 @@
 {
   "home": {
-    "title": "Jestem Michał",
+    "title": "Jestem <1>Michał</1>",
     "subtitle": "Frontend Developer",
-    "description": "Jestem Frontend Developerem z prawie 4-letnim doświadczeniem komercyjnym, a frontendem zajmuję się od około 5 lat. Głównie pracuję z Reactem, ale ostatnio zagłębiam się w Next.js. Uwielbiam zdobywać nowe umiejętności techniczne, szczególnie wieczorami przy dużej filiżance kawy. Moja pasja do nauki sprawia, że jestem podekscytowany wprowadzaniem nowych pomysłów do moich projektów.",
+    "description": "Jestem <1>Frontend Developerem</1> z prawie 4-letnim doświadczeniem komercyjnym, a frontendem zajmuję się od około 5 lat. Głównie pracuję z <3>Reactem</3>, ale ostatnio zagłębiam się w <5>Next.js</5>. Uwielbiam zdobywać nowe umiejętności techniczne, szczególnie wieczorami przy dużej filiżance kawy. Moja pasja do nauki sprawia, że jestem podekscytowany wprowadzaniem nowych pomysłów do moich projektów.",
     "contact": "Kontakt",
     "github": "Github",
     "favoriteTechStack": "Ulubiony stack",

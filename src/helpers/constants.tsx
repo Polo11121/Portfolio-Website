@@ -104,6 +104,22 @@ export const ADVANCED_skills = [
 
 export const PROJECTS_EN = [
   {
+    title: "React Native Expense Tracker",
+    image: "/in-progress.jpg",
+    applicationLink: "",
+    description:
+      "A mobile expense tracker built with React Native, Expo Router, and Firebase. Includes auth, realtime updates, and wallet stats.",
+    githubLink: "https://github.com/Polo11121/React-Native-Expenses-Tracker",
+  },
+  {
+    title: "SaaS AI Agent Platform",
+    image: "/in-progress.jpg",
+    applicationLink: "",
+    description:
+      "Full-stack AI SaaS app built with Next.js 15, React, Polar, and Better Auth. Features auth, file uploads, billing, and modern UI.",
+    githubLink: "https://github.com/Polo11121/Next.js-SaaS-AI-Agent-Platform",
+  },
+  {
     title: "ZBR ROWERY",
     image: "/zbr-rowery.jpg",
     applicationLink: "https://www.zbr-rowery.pl/",
@@ -335,6 +351,22 @@ export const PROJECTS_EN = [
 ];
 
 export const PROJECTS_PL = [
+  {
+    title: "React Native Expense Tracker",
+    image: "/in-progress.jpg",
+    applicationLink: "",
+    description:
+      "Mobilna aplikacja do śledzenia wydatków zbudowana w React Native z Expo Router i Firebase. Zawiera logowanie, dane w czasie rzeczywistym i statystyki.",
+    githubLink: "https://github.com/Polo11121/React-Native-Expenses-Tracker",
+  },
+  {
+    title: "SaaS AI Agent Platform",
+    image: "/in-progress.jpg",
+    applicationLink: "",
+    description:
+      "Full-stackowa aplikacja SaaS AI zbudowana w Next.js 15, React, Polar i Better Auth. Zawiera logowanie, upload plików, billing i nowoczesny interfejs.",
+    githubLink: "https://github.com/Polo11121/Next.js-SaaS-AI-Agent-Platform",
+  },
   {
     title: "ZBR ROWERY",
     image: "/zbr-rowery.jpg",
