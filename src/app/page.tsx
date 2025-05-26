@@ -71,7 +71,11 @@ const Home = () => {
             </div>
           </div>
         </Section>
-        <Section title="Currently working on" Icon={FaCode}>
+        <Section
+          title="Currently working on"
+          Icon={FaCode}
+          className="w-[500px]"
+        >
           <ProjectCard
             title={currentProject.title}
             githubLink={currentProject.githubLink}

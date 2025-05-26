@@ -95,10 +95,11 @@ export const ADVANCED_skills = [
 
 export const PROJECTS = [
   {
-    title: "ZBR Rowery",
+    title: "ZBR ROWERY",
     image: "/zbr-rowery.jpg",
     applicationLink: "https://www.zbr-rowery.pl/",
-    description: "Currently working on....",
+    description:
+      "A fully responsive website for a local bike service. Built with modern React tools and best practices, the site features smooth navigation, optimized performance, and clean UI, showcasing services, a photo gallery, and a contact form.",
     githubLink: "https://github.com/Polo11121/zbr-rowery",
   },
   {
