@@ -19,15 +19,13 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => (
-  <html
-    lang="en"
-    suppressHydrationWarning
-    className={`${GeistSans.variable} ${GeistMono.variable}`}
-  >
-    <body>
+  <html lang="en" suppressHydrationWarning>
+    <body
+      className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}
+    >
       <ThemeProvider
         attribute="class"
-        defaultTheme="dark"
+        defaultTheme="system"
         enableSystem
         disableTransitionOnChange
       >

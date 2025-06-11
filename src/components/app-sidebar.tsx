@@ -11,12 +11,13 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { usePathname } from "next/navigation";
-import { NAVIGATION_LINKS } from "@/helpers/constants";
+import { useNavigationLinks } from "@/helpers/constants";
 import Link from "next/link";
 
 export const AppSidebar = () => {
   const { setOpenMobile } = useSidebar();
   const pathname = usePathname();
+  const navigationLinks = useNavigationLinks();
 
   return (
     <Sidebar>
@@ -24,7 +25,7 @@ export const AppSidebar = () => {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {NAVIGATION_LINKS.map(({ Icon, href, label }) => (
+              {navigationLinks.map(({ Icon, href, label }) => (
                 <SidebarMenuItem key={label}>
                   <SidebarMenuButton
                     asChild

@@ -1,0 +1,139 @@
+{
+  "home": {
+    "title": "I'm Michał",
+    "subtitle": "Frontend Developer",
+    "description": "I'm a Frontend Developer with nearly 4 years of commercial experience, and I've been learning frontend development for about 5 years. I mostly work with React but have been diving into Next.js lately. I love picking up new tech skills, especially in the evenings with a big cup of coffee by my side. My enthusiasm for learning keeps me excited about bringing new ideas to my projects.",
+    "contact": "Contact me",
+    "github": "Github",
+    "favoriteTechStack": "Favorite tech stack",
+    "currentlyWorkingOn": "Currently working on",
+    "myResume": "My resume",
+    "download": "DOWNLOAD",
+    "techStack": {
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "prisma": "Prisma"
+    }
+  },
+  "journey": {
+    "title": "My journey",
+    "timeline": {
+      "2019-2020": {
+        "title": "First steps in web development",
+        "description": "Started learning HTML, CSS, and JavaScript. Created first websites and learned about responsive design.",
+        "completed": "Completed course",
+        "on": "on",
+        "createdProjects": "Created projects:",
+        "memoryGame": "Memory Game",
+        "liveChat": "Live Chat Application",
+        "repo": "Repo",
+        "application": "Application"
+      },
+      "internship": {
+        "title": "Frontend Developer Internship",
+        "description": "Started internship as a Frontend Developer",
+        "createdProject": "Created LinkedIn clone project:",
+        "learnedTechnologies": "Learned technologies:"
+      },
+      "junior": {
+        "title": "Junior Frontend Developer",
+        "description": "Hired as Frontend Junior Developer after successful internship",
+        "responsibilities": "Key responsibilities and achievements:",
+        "achievements": [
+          "Joined the project team and learned team collaboration",
+          "Mastered new technologies and tools",
+          "Started working with Redux for state management",
+          "Learned to use GitLab for version control",
+          "Became familiar with Jira for project management"
+        ]
+      },
+      "growth": {
+        "title": "Professional Growth",
+        "description": "Continued working as Frontend Developer while expanding skills",
+        "achievements": "Key achievements and projects:",
+        "explored": "Explored React Native development and completed",
+        "created": "Created fullstack applications using",
+        "and": "and",
+        "developed": "Developed a social networking application with websockets and automated tests in",
+        "frontend": "Frontend",
+        "backend": "Backend"
+      },
+      "2023-2024": {
+        "title": "Next.js and modern stack",
+        "description": "Discovered Next.js, TypeScript, and modern development practices. Created new projects with the latest technologies.",
+        "completedCourses": "Completed courses:",
+        "createdClones": "Created clones of various popular applications:"
+      },
+      "current": {
+        "title": "Current Focus",
+        "description": "Still working in the same company as a Frontend Developer, looking for new opportunities to grow professionally",
+        "createdApps": "Created several applications:",
+        "continuing": "Continuing to work on skills and experiment with new ideas in free time, while seeking opportunities for professional growth"
+      },
+      "projects": {
+        "title": "Current Projects",
+        "date": "2025 - present",
+        "joinedProject": "Joined a new project at the company:",
+        "fullyImplemented": "Fully implemented frontend for",
+        "medicalChatGPT": "medical ChatGPT application",
+        "features": "Features include: chat, file uploads, citations, consent modals, and internationalization",
+        "focus": "Focus on accessibility, SEO, and responsive design",
+        "createdWebsites": "Created websites for friends:",
+        "personalTrainer": "Personal trainer website",
+        "firstProject": "First project deployed to a purchased domain",
+        "bikeRepair": "Bike repair business website",
+        "focusOn": "Focus on clean code, semantic HTML, SEO, and WCAG compliance",
+        "currentProject": "Current side project:",
+        "workingOn": "Working on",
+        "basedOn": "based on",
+        "tutorial": "tutorial"
+      }
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "advanced": "Advanced",
+    "basic": "Basic"
+  },
+  "portfolio": {
+    "title": "My projects"
+  },
+  "contact": {
+    "linkedin": "My LinkedIn",
+    "github": "My Github",
+    "title": "Contact Me",
+    "description": "Feel free to reach out by filling out the form below. I'll get back to you as soon as possible.",
+    "footer": "Thank you for reaching out! I'll do my best to respond within 24–48 hours.",
+    "form": {
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address",
+        "description": "I'll use this email to get back to you."
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Write your message here",
+        "description": "Please provide details about your inquiry or message."
+      },
+      "send": "Send Message",
+      "success": "Message sent successfully!",
+      "errors": {
+        "invalidEmail": "Invalid email address",
+        "emptyMessage": "Message cannot be empty"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Michał Jasiński. All rights reserved."
+  },
+  "navigation": {
+    "home": "Home",
+    "myStory": "My story",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "sidebar": {
+    "title": "Frontend developer"
+  }
+}

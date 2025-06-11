@@ -1,12 +1,5 @@
-import { ProjectList } from "@/components/project-list";
-import { Section } from "@/components/section";
-import { PROJECTS } from "@/helpers/constants";
-import { FaCode } from "react-icons/fa";
+import { PortfolioView } from "@/views/portfolio-view";
 
-const PortfolioPage = () => (
-  <Section title="My projects" Icon={FaCode}>
-    <ProjectList projects={PROJECTS} />
-  </Section>
-);
+const PortfolioPage = () => <PortfolioView />;
 
 export default PortfolioPage;

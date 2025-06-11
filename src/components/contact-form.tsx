@@ -14,8 +14,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
   const { form, isPending, onSubmit, sendEmailAction } = useContactForm();
 
   return (
@@ -30,17 +32,17 @@ export const ContactForm = () => {
           name="mail"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email Address</FormLabel>
+              <FormLabel>{t("contact.form.email.label")}</FormLabel>
               <FormControl>
                 <Input
                   {...field}
-                  placeholder="Enter your email address"
+                  placeholder={t("contact.form.email.placeholder")}
                   type="email"
                   disabled={isPending}
                 />
               </FormControl>
               <FormDescription>
-                I&apos;ll use this email to get back to you.
+                {t("contact.form.email.description")}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -51,11 +53,11 @@ export const ContactForm = () => {
           name="content"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your Message</FormLabel>
+              <FormLabel>{t("contact.form.message.label")}</FormLabel>
               <FormControl>
                 <Textarea
                   {...field}
-                  placeholder="Write your message here"
+                  placeholder={t("contact.form.message.placeholder")}
                   rows={5}
                   minLength={1}
                   className="resize-none"
@@ -63,7 +65,7 @@ export const ContactForm = () => {
                 />
               </FormControl>
               <FormDescription>
-                Please provide details about your inquiry or message.
+                {t("contact.form.message.description")}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -71,7 +73,7 @@ export const ContactForm = () => {
         />
         <div className="flex flex-row items-center gap-2">
           <Button disabled={isPending} type="submit">
-            Send Message
+            {t("contact.form.send")}
           </Button>
           {isPending && <Loader2 className="animate-spin" />}
         </div>

@@ -47,10 +47,12 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 
 export const Timeline = () => {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const { t } = useTranslation();
 
   const timelineStyles = {
     contentStyle: {
@@ -100,7 +102,7 @@ export const Timeline = () => {
           icon={<FaReact />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Beginning of the Journey
+            {t("journey.timeline.2019-2020.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -135,10 +137,10 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Started learning web development fundamentals
+            {t("journey.timeline.2019-2020.description")}
           </p>
           <p className="mb-2 text-sm sm:text-base">
-            Completed{" "}
+            {t("journey.timeline.2019-2020.completed")}{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -147,7 +149,7 @@ export const Timeline = () => {
             >
               The Ultimate React Course: React, Redux & More
             </a>{" "}
-            on{" "}
+            {t("journey.timeline.2019-2020.on")}{" "}
             <Tooltip>
               <TooltipTrigger>
                 <SiUdemy color="#A435F0" size={24} className="inline" />
@@ -156,17 +158,17 @@ export const Timeline = () => {
             </Tooltip>
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Created projects:</p>
+            <p>{t("journey.timeline.2019-2020.createdProjects")}</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Memory Game (
+                {t("journey.timeline.2019-2020.memoryGame")} (
                 <a
                   href="https://github.com/Polo11121/React-Memory-Game-App"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo
+                  {t("journey.timeline.2019-2020.repo")}
                 </a>{" "}
                 |{" "}
                 <a
@@ -175,19 +177,19 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Application
+                  {t("journey.timeline.2019-2020.application")}
                 </a>
                 )
               </li>
               <li>
-                Live Chat Application (
+                {t("journey.timeline.2019-2020.liveChat")} (
                 <a
                   href="https://github.com/Polo11121/React-Live-Chat-App"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo
+                  {t("journey.timeline.2019-2020.repo")}
                 </a>{" "}
                 |{" "}
                 <a
@@ -196,7 +198,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Application
+                  {t("journey.timeline.2019-2020.application")}
                 </a>
                 )
               </li>
@@ -213,7 +215,7 @@ export const Timeline = () => {
           icon={<SiLinkedin />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Frontend Developer Internship
+            {t("journey.timeline.internship.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -240,10 +242,10 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Started internship as a Frontend Developer
+            {t("journey.timeline.internship.description")}
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Created LinkedIn clone project:</p>
+            <p>{t("journey.timeline.internship.createdProject")}</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 LinkedIn Clone (
@@ -253,7 +255,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo
+                  {t("journey.timeline.2019-2020.repo")}
                 </a>{" "}
                 |{" "}
                 <a
@@ -262,14 +264,16 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Application
+                  {t("journey.timeline.2019-2020.application")}
                 </a>
                 )
               </li>
             </ul>
           </div>
           <div className="mt-4 text-sm sm:text-base">
-            <p className="mb-2">Learned new technologies:</p>
+            <p className="mb-2">
+              {t("journey.timeline.internship.learnedTechnologies")}
+            </p>
             <div className="flex flex-wrap gap-2">
               <Tooltip>
                 <TooltipTrigger>
@@ -366,7 +370,7 @@ export const Timeline = () => {
           icon={<FaReact />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Junior Frontend Developer
+            {t("journey.timeline.junior.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -389,16 +393,18 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Hired as Frontend Junior Developer after successful internship
+            {t("journey.timeline.junior.description")}
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Key responsibilities and achievements:</p>
+            <p>{t("journey.timeline.junior.responsibilities")}</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Joined the project team and learned team collaboration</li>
-              <li>Mastered new technologies and tools</li>
-              <li>Started working with Redux for state management</li>
-              <li>Learned to use GitLab for version control</li>
-              <li>Became familiar with Jira for project management</li>
+              {(
+                t("journey.timeline.junior.achievements", {
+                  returnObjects: true,
+                }) as string[]
+              ).map((achievement: string, index: number) => (
+                <li key={index}>{achievement}</li>
+              ))}
             </ul>
           </div>
         </VerticalTimelineElement>
@@ -412,7 +418,7 @@ export const Timeline = () => {
           icon={<FaReact />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Professional Growth
+            {t("journey.timeline.growth.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -439,13 +445,13 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Continued working as Frontend Developer while expanding skills
+            {t("journey.timeline.growth.description")}
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Key achievements and projects:</p>
+            <p>{t("journey.timeline.growth.achievements")}</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Explored React Native development and completed{" "}
+                {t("journey.timeline.growth.explored")}{" "}
                 <a
                   href="https://www.udemy.com/course/react-native-the-practical-guide"
                   target="_blank"
@@ -454,7 +460,7 @@ export const Timeline = () => {
                 >
                   React Native - The Practical Guide
                 </a>{" "}
-                on{" "}
+                {t("journey.timeline.2019-2020.on")}{" "}
                 <Tooltip>
                   <TooltipTrigger>
                     <SiUdemy color="#A435F0" size={24} className="inline" />
@@ -463,7 +469,7 @@ export const Timeline = () => {
                 </Tooltip>
               </li>
               <li>
-                Created fullstack applications using{" "}
+                {t("journey.timeline.growth.created")}{" "}
                 <Tooltip>
                   <TooltipTrigger>
                     <SiMongodb color="#47A248" size={24} className="inline" />
@@ -484,7 +490,7 @@ export const Timeline = () => {
                   </TooltipTrigger>
                   <TooltipContent>React</TooltipContent>
                 </Tooltip>
-                , and{" "}
+                , {t("journey.timeline.growth.and")}{" "}
                 <Tooltip>
                   <TooltipTrigger>
                     <FaNodeJs color="#339933" size={24} className="inline" />
@@ -493,8 +499,7 @@ export const Timeline = () => {
                 </Tooltip>
               </li>
               <li>
-                Developed a social networking application with websockets and
-                automated tests in{" "}
+                {t("journey.timeline.growth.developed")}{" "}
                 <Tooltip>
                   <TooltipTrigger>
                     <SiCypress size={24} className="inline" />
@@ -508,7 +513,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Frontend
+                  {t("journey.timeline.growth.frontend")}
                 </a>{" "}
                 |{" "}
                 <a
@@ -517,7 +522,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Backend
+                  {t("journey.timeline.growth.backend")}
                 </a>{" "}
                 |{" "}
                 <a
@@ -526,7 +531,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Application
+                  {t("journey.timeline.2019-2020.application")}
                 </a>
                 )
               </li>
@@ -543,7 +548,7 @@ export const Timeline = () => {
           icon={<SiNextdotjs />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Next.js Journey
+            {t("journey.timeline.2023-2024.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -554,11 +559,10 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Still working in the same company, but discovered and embraced
-            Next.js
+            {t("journey.timeline.2023-2024.description")}
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Completed courses:</p>
+            <p>{t("journey.timeline.2023-2024.completedCourses")}</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 <a
@@ -569,7 +573,7 @@ export const Timeline = () => {
                 >
                   Next.js 14 & React - The Complete Guide
                 </a>{" "}
-                and{" "}
+                {t("journey.timeline.growth.and")}{" "}
                 <a
                   href="https://www.udemy.com/course/next-js-the-complete-developers-guide"
                   target="_blank"
@@ -585,7 +589,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo 1
+                  {t("journey.timeline.2019-2020.repo")} 1
                 </a>{" "}
                 |{" "}
                 <a
@@ -594,7 +598,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo 2
+                  {t("journey.timeline.2019-2020.repo")} 2
                 </a>
                 )
               </li>
@@ -614,7 +618,7 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo 1
+                  {t("journey.timeline.2019-2020.repo")} 1
                 </a>{" "}
                 |{" "}
                 <a
@@ -623,13 +627,13 @@ export const Timeline = () => {
                   rel="noreferrer"
                   className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                 >
-                  Repo 2
+                  {t("journey.timeline.2019-2020.repo")} 2
                 </a>
                 )
               </li>
             </ul>
             <p className="mt-4">
-              Created clones of various popular applications:
+              {t("journey.timeline.2023-2024.createdClones")}
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
@@ -640,7 +644,7 @@ export const Timeline = () => {
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Repo 1
+                    {t("journey.timeline.2019-2020.repo")} 1
                   </a>
                   <span>|</span>
                   <a
@@ -649,7 +653,7 @@ export const Timeline = () => {
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Repo 2
+                    {t("journey.timeline.2019-2020.repo")} 2
                   </a>
                   <span>|</span>
                   <a
@@ -658,7 +662,7 @@ export const Timeline = () => {
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Application 1
+                    {t("journey.timeline.2019-2020.application")} 1
                   </a>
                   <span>|</span>
                   <a
@@ -667,7 +671,7 @@ export const Timeline = () => {
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Application 2
+                    {t("journey.timeline.2019-2020.application")} 2
                   </a>
                 </div>
               </li>
@@ -684,7 +688,7 @@ export const Timeline = () => {
           icon={<SiNextdotjs />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Current Focus
+            {t("journey.timeline.current.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -695,11 +699,10 @@ export const Timeline = () => {
             </Tooltip>
           </div>
           <p className="mb-2 text-sm sm:text-base">
-            Still working in the same company as a Frontend Developer, looking
-            for new opportunities to grow professionally
+            {t("journey.timeline.current.description")}
           </p>
           <div className="space-y-2 text-sm sm:text-base">
-            <p>Created several applications:</p>
+            <p>{t("journey.timeline.current.createdApps")}</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 <div className="flex flex-wrap gap-1">
@@ -742,8 +745,7 @@ export const Timeline = () => {
               </li>
             </ul>
             <p className="mt-4 text-sm sm:text-base">
-              Continuing to work on skills and experiment with new ideas in free
-              time, while seeking opportunities for professional growth
+              {t("journey.timeline.current.continuing")}
             </p>
           </div>
         </VerticalTimelineElement>
@@ -752,12 +754,12 @@ export const Timeline = () => {
           className="vertical-timeline-element--work max-w-full sm:max-w-none text-sm sm:text-base"
           contentStyle={timelineStyles.contentStyle}
           contentArrowStyle={timelineStyles.contentArrowStyle}
-          date="2025 - Now"
+          date={t("journey.timeline.projects.date")}
           iconStyle={timelineStyles.iconStyle}
           icon={<SiNextdotjs />}
         >
           <h3 className="vertical-timeline-element-title text-base sm:text-lg">
-            Current Projects
+            {t("journey.timeline.projects.title")}
           </h3>
           <div className="flex flex-row items-center gap-1 mb-4">
             <Tooltip>
@@ -781,10 +783,12 @@ export const Timeline = () => {
           </div>
           <div className="space-y-4 text-sm sm:text-base">
             <div>
-              <p className="mb-2">Joined a new project at the company:</p>
+              <p className="mb-2">
+                {t("journey.timeline.projects.joinedProject")}
+              </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  Fully implemented frontend for{" "}
+                  {t("journey.timeline.projects.fullyImplemented")}{" "}
                   <a
                     href="https://kidney.com"
                     target="_blank"
@@ -793,52 +797,52 @@ export const Timeline = () => {
                   >
                     Kidney.com
                   </a>{" "}
-                  medical ChatGPT application
+                  {t("journey.timeline.projects.medicalChatGPT")}
                 </li>
-                <li>
-                  Features include: chat, file uploads, citations, consent
-                  modals, and internationalization
-                </li>
-                <li>Focus on accessibility, SEO, and responsive design</li>
+                <li>{t("journey.timeline.projects.features")}</li>
+                <li>{t("journey.timeline.projects.focus")}</li>
               </ul>
             </div>
 
             <div>
-              <p className="mb-2">Created websites for friends:</p>
+              <p className="mb-2">
+                {t("journey.timeline.projects.createdWebsites")}
+              </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  Personal trainer website (
+                  {t("journey.timeline.projects.personalTrainer")} (
                   <a
                     href="https://github.com/Polo11121/Next.js-gym-trainer-site"
                     target="_blank"
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Repo
+                    {t("journey.timeline.2019-2020.repo")}
                   </a>
-                  ) - First project deployed to a purchased domain
+                  ) - {t("journey.timeline.projects.firstProject")}
                 </li>
                 <li>
-                  Bike repair business website (
+                  {t("journey.timeline.projects.bikeRepair")} (
                   <a
                     href="https://github.com/Polo11121/zbr-rowery"
                     target="_blank"
                     rel="noreferrer"
                     className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
                   >
-                    Repo
+                    {t("journey.timeline.2019-2020.repo")}
                   </a>
-                  ) - Focus on clean code, semantic HTML, SEO, and WCAG
-                  compliance
+                  ) - {t("journey.timeline.projects.focusOn")}
                 </li>
               </ul>
             </div>
 
             <div>
-              <p className="mb-2">Current side project:</p>
+              <p className="mb-2">
+                {t("journey.timeline.projects.currentProject")}
+              </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  Working on{" "}
+                  {t("journey.timeline.projects.workingOn")}{" "}
                   <a
                     href="https://github.com/Polo11121/SaaS-AI-Agent-Platform"
                     target="_blank"
@@ -847,7 +851,7 @@ export const Timeline = () => {
                   >
                     SaaS-AI-Agent-Platform
                   </a>{" "}
-                  based on{" "}
+                  {t("journey.timeline.projects.basedOn")}{" "}
                   <a
                     href="https://www.youtube.com/watch?v=xEDCEmqyvC8&t=10195s&ab_channel=CodeWithAntonio"
                     target="_blank"
@@ -856,7 +860,7 @@ export const Timeline = () => {
                   >
                     Build and Deploy a SaaS AI Agent Platform
                   </a>{" "}
-                  tutorial
+                  {t("journey.timeline.projects.tutorial")}
                 </li>
               </ul>
             </div>

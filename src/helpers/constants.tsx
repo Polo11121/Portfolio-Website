@@ -42,14 +42,23 @@ import {
   SiTestinglibrary,
   SiWebpack,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
-export const NAVIGATION_LINKS = [
-  { href: "/", Icon: FaHome, label: "Home" },
-  { href: "/my-journey", Icon: RiTreasureMapLine, label: "My story" },
-  { href: "/skills", Icon: FaTools, label: "Skills" },
-  { href: "/portfolio", Icon: FaCode, label: "Portfolio" },
-  { href: "/contact", Icon: SiGmail, label: "Contact" },
-];
+export const useNavigationLinks = () => {
+  const { t } = useTranslation();
+
+  return [
+    { href: "/", Icon: FaHome, label: t("navigation.home") },
+    {
+      href: "/my-journey",
+      Icon: RiTreasureMapLine,
+      label: t("navigation.myStory"),
+    },
+    { href: "/skills", Icon: FaTools, label: t("navigation.skills") },
+    { href: "/portfolio", Icon: FaCode, label: t("navigation.portfolio") },
+    { href: "/contact", Icon: SiGmail, label: t("navigation.contact") },
+  ];
+};
 
 export const BASIC_SKILLS = [
   { name: "MongoDB", Icon: SiMongodb, color: "#47A248" },
@@ -93,7 +102,7 @@ export const ADVANCED_skills = [
   { name: "Zustand", url: "/zustand.svg" },
 ];
 
-export const PROJECTS = [
+export const PROJECTS_EN = [
   {
     title: "ZBR ROWERY",
     image: "/zbr-rowery.jpg",
@@ -321,6 +330,238 @@ export const PROJECTS = [
     applicationLink: "https://react-amazon-clone-app.vercel.app",
     description:
       "An Amazon-inspired ecommerce application built with React, focusing on UI and cart functionality.",
+    image: "/amazon-clone.jpg",
+  },
+];
+
+export const PROJECTS_PL = [
+  {
+    title: "ZBR ROWERY",
+    image: "/zbr-rowery.jpg",
+    applicationLink: "https://www.zbr-rowery.pl/",
+    description:
+      "W pełni responsywna strona internetowa dla lokalnego serwisu rowerowego. Zbudowana z wykorzystaniem nowoczesnych narzędzi React i najlepszych praktyk, strona charakteryzuje się płynną nawigacją, zoptymalizowaną wydajnością i czystym interfejsem, prezentując usługi, galerię zdjęć i formularz kontaktowy.",
+    githubLink: "https://github.com/Polo11121/zbr-rowery",
+  },
+  {
+    title: "Gym Coach Monika",
+    description:
+      "Strona portfolio prezentująca usługi i doświadczenie trenerki Moniki, zawierająca jej plany treningowe i opinie klientów.",
+    image: "/gym-coach-monika.jpg",
+    applicationLink: "https://www.monikahabant.pl/",
+    githubLink: "https://github.com/Polo11121/Next.js-gym-trainer-site",
+  },
+  {
+    title: "Refresh Token Auth Project",
+    image: "/refresh-token-auth-project.jpg",
+    githubLink: "https://github.com/Polo11121/React-Refresh-Access-Token-Auth",
+    applicationLink: "https://react-refresh-access-token-auth.vercel.app/",
+    description:
+      "Aplikacja zaprojektowana do testowania uwierzytelniania przy użyciu tokenów odświeżania i dostępu, prezentująca bezpieczne zarządzanie tokenami w React.",
+  },
+  {
+    title: "Slack Clone",
+    githubLink: "https://github.com/Polo11121/Next.js-Slack-Clone",
+    description:
+      "Projekt full-stack zbudowany z Next.js, React, Tailwind, Auth.js.",
+    image: "/slack-clone.jpg",
+  },
+  {
+    title: "React Wordle Game",
+    applicationLink: "https://react-wordle-game-five.vercel.app",
+    description: "Prosta gra Wordle zbudowana w React.",
+    githubLink: "https://github.com/Polo11121/React-Wordle-Game",
+    image: "/wordle-game.jpg",
+  },
+  {
+    title: "Cobracase App",
+    githubLink: "https://github.com/Polo11121/Next.js-Cobracase-App",
+    applicationLink: "https://next-js-cobracase-app.vercel.app",
+    description:
+      "Aplikacja do zarządzania sprawami zbudowana w Next.js, wykorzystująca zaawansowane wzorce React i własne hooki.",
+    image: "/cobracase.jpg",
+  },
+  {
+    title: "Pet Soft App",
+    githubLink: "https://github.com/Polo11121/Next.js-Pet-Soft-App",
+    applicationLink: "https://next-js-pet-soft-app.vercel.app",
+    description:
+      "Aplikacja do zarządzania zwierzętami domowymi opracowana w Next.js, prezentująca dynamiczne routing i Tailwind CSS.",
+    image: "/pet-soft.jpg",
+  },
+  {
+    title: "Evento App",
+    githubLink: "https://github.com/Polo11121/Next.js-Evento-App",
+    applicationLink: "https://next-js-evento-app.vercel.app",
+    description:
+      "Platforma do zarządzania wydarzeniami zbudowana w Next.js, wykorzystująca renderowanie po stronie serwera i intuicyjny interfejs.",
+    image: "/evento.jpg",
+  },
+  {
+    title: "Discord Clone App",
+    githubLink: "https://github.com/Polo11121/Next.js-Discord-Clone-App",
+    applicationLink: "https://next-js-discord-clone-app.vercel.app",
+    description:
+      "Klon Discord zbudowany w Next.js, wykorzystujący dane w czasie rzeczywistym i Tailwind CSS.",
+    image: "/discord-clone.jpg",
+  },
+  {
+    title: "Threads Clone App",
+    githubLink: "https://github.com/Polo11121/Next.js-Threads-Clone-App",
+    applicationLink: "https://nextjs13-threads-clone-app.vercel.app",
+    description:
+      "Klon Threads opracowany w Next.js, skupiający się na responsywnym designie i dynamicznej treści.",
+    image: "/threads-clone.jpg",
+  },
+  {
+    title: "React Router V6 Test App",
+    githubLink: "https://github.com/Polo11121/React-Router-V6-Test-App",
+    applicationLink: "https://react-router-v6-test-app.vercel.app",
+    description:
+      "Projekt testowy eksplorujący najnowsze funkcje React Router V6.",
+    image: "/react-router-v6-test.jpg",
+  },
+  {
+    title: "React Query V5 Test App",
+    githubLink: "https://github.com/Polo11121/React-Query-V5-Test-App",
+    applicationLink: "https://react-query-v5-test-app.vercel.app",
+    description:
+      "Projekt demonstracyjny prezentujący możliwości React Query V5.",
+    image: "/react-query-v5-test.jpg",
+  },
+  {
+    title: "React Zustand Test App",
+    githubLink: "https://github.com/Polo11121/React-Zustand-Test-App",
+    applicationLink: "https://react-zustand-test-app.vercel.app",
+    description:
+      "Projekt demonstracyjny zarządzania stanem przy użyciu Zustand w aplikacji React.",
+    image: "/react-zustand-test.jpg",
+  },
+  {
+    title: "RTK Query Test App",
+    githubLink: "https://github.com/Polo11121/RTK-Query-Test-App",
+    applicationLink: "https://rtk-query-test-app.vercel.app",
+    description:
+      "Projekt eksplorujący możliwości pobierania i cachowania danych RTK Query.",
+    image: "/rtk-query-test.jpg",
+  },
+  {
+    title: "Image Gallery Test App",
+    githubLink: "https://github.com/Polo11121/Next.js-Image-Gallery-Test-App",
+    applicationLink: "https://nextjs13-image-gallery-indol.vercel.app",
+    description:
+      "Aplikacja galerii zdjęć zbudowana w Next.js, prezentująca zoptymalizowane renderowanie obrazów.",
+    image: "/image-gallery-test.jpg",
+  },
+  {
+    title: "Data Fetching Test App",
+    githubLink: "https://github.com/Polo11121/Next.js-Data-Fetching-Test-App",
+    applicationLink: "https://nextjs-data-fetching-test-app.vercel.app",
+    description:
+      "Projekt demonstracyjny różnych metod pobierania danych w Next.js.",
+    image: "/data-fetching-test.jpg",
+  },
+  {
+    title: "Twitch Clone App",
+    githubLink: "https://github.com/Polo11121/Next.js-Twitch-Clone-App",
+    applicationLink: "https://nextjs14-twitch-clone-app.vercel.app",
+    description:
+      "Platforma streamingowa inspirowana Twitch, zbudowana w Next.js, skupiająca się na interaktywności w czasie rzeczywistym.",
+    image: "/twitch-clone.jpg",
+  },
+  {
+    title: "The Wild Oasis App",
+    githubLink:
+      "https://github.com/Polo11121/The-Ultimate-React-Course-2024-The-Wild-Oasis-App",
+    applicationLink:
+      "https://the-ultimate-react-course-2024-the-wild-oasis-app.vercel.app",
+    description:
+      "Kompleksowa aplikacja React stworzona w ramach Ultimate React Course 2024.",
+    image: "/wild-oasis.jpg",
+  },
+  {
+    title: "Fast Pizza App",
+    githubLink:
+      "https://github.com/Polo11121/The-Ultimate-React-Course-2024-Fast-Pizza-App",
+    applicationLink:
+      "https://the-ultimate-react-course-2024-fast-pizza-app.vercel.app",
+    description:
+      "Aplikacja do zamawiania pizzy online zbudowana w React, skupiająca się na wydajności i doświadczeniu użytkownika.",
+    image: "/fast-pizza.jpg",
+  },
+  {
+    title: "Auth Project",
+    githubLink:
+      "https://github.com/Polo11121/Next.js-14-React-The-Complete-Guide-Udemy-Course/tree/main/auth-project",
+    applicationLink: "https://nextjs-auth-project-two.vercel.app",
+    description:
+      "Projekt eksplorujący przepływy uwierzytelniania w Next.js jako część kompleksowego kursu.",
+    image: "/auth-project.jpg",
+  },
+  {
+    title: "Blog Project",
+    githubLink:
+      "https://github.com/Polo11121/Next.js-14-React-The-Complete-Guide-Udemy-Course/tree/main/blog-project",
+    applicationLink: "https://nextjs-blog-project-rosy-alpha.vercel.app/",
+    description:
+      "Prosta aplikacja blogowa prezentująca podstawy Next.js i dynamiczne routing.",
+    image: "/blog-project.jpg",
+  },
+  {
+    title: "Next.js Basics",
+    githubLink:
+      "https://github.com/Polo11121/Next.js-14-React-The-Complete-Guide-Udemy-Course/tree/main/nextjs-basics",
+    applicationLink: "https://nextjs-basics-xi.vercel.app",
+    description:
+      "Projekt podstawowy obejmujący podstawy Next.js jako część kursu online.",
+    image: "/nextjs-basics.jpg",
+  },
+  {
+    title: "Ecommerce Admin App",
+    githubLink: "https://github.com/Polo11121/Next.js-Ecommerce-Admin-App",
+    applicationLink: "https://nextjs-ecommerce-admin-project.vercel.app",
+    description:
+      "Panel administracyjny do zarządzania platformą e-commerce, zbudowany w Next.js i Tailwind CSS.",
+    image: "/ecommerce-admin.jpg",
+  },
+  {
+    title: "Ecommerce Store App",
+    githubLink: "https://github.com/Polo11121/Next.js-Ecommerce-Store-App",
+    applicationLink: "https://nextjs-ecommerce-store-project.vercel.app",
+    description:
+      "Nowoczesny sklep e-commerce zbudowany w Next.js, charakteryzujący się responsywnym designem i zoptymalizowaną wydajnością.",
+    image: "/ecommerce-store.jpg",
+  },
+  {
+    title: "Booking App",
+    githubLink: "https://github.com/Polo11121/Next.js-Booking-App",
+    applicationLink: "https://nextj13-booking-project.vercel.app",
+    description:
+      "Platforma rezerwacyjna zbudowana w Next.js, zawierająca wybór dat i walidację formularzy.",
+    image: "/booking.jpg",
+  },
+  {
+    title: "Meetups App",
+    githubLink: "https://github.com/Polo11121/Next.js-Meetups-App",
+    applicationLink: "https://nextjs13-meetups.vercel.app",
+    description:
+      "Aplikacja do zarządzania spotkaniami opracowana w Next.js, prezentująca dynamiczną treść i routing.",
+    image: "/meetups.jpg",
+  },
+  {
+    title: "Live Chat App",
+    githubLink: "https://github.com/Polo11121/React-Live-Chat-App",
+    applicationLink: "https://react-live-chat-app.vercel.app",
+    description:
+      "Aplikacja czatu w czasie rzeczywistym zbudowana w React, wykorzystująca WebSocket do komunikacji na żywo.",
+    image: "/live-chat.jpg",
+  },
+  {
+    title: "Amazon Clone App",
+    githubLink: "https://github.com/Polo11121/React-Amazon-Clone-App",
+    applicationLink: "https://react-amazon-clone-app.vercel.app",
+    description:
+      "Aplikacja e-commerce inspirowana Amazon, zbudowana w React, skupiająca się na interfejsie i funkcjonalności koszyka.",
     image: "/amazon-clone.jpg",
   },
 ];

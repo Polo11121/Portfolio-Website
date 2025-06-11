@@ -1,0 +1,139 @@
+{
+  "home": {
+    "title": "Jestem Michał",
+    "subtitle": "Frontend Developer",
+    "description": "Jestem Frontend Developerem z prawie 4-letnim doświadczeniem komercyjnym, a frontendem zajmuję się od około 5 lat. Głównie pracuję z Reactem, ale ostatnio zagłębiam się w Next.js. Uwielbiam zdobywać nowe umiejętności techniczne, szczególnie wieczorami przy dużej filiżance kawy. Moja pasja do nauki sprawia, że jestem podekscytowany wprowadzaniem nowych pomysłów do moich projektów.",
+    "contact": "Kontakt",
+    "github": "Github",
+    "favoriteTechStack": "Ulubiony stack",
+    "currentlyWorkingOn": "Aktualnie pracuję nad",
+    "myResume": "Moje CV",
+    "download": "POBIERZ",
+    "techStack": {
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "prisma": "Prisma"
+    }
+  },
+  "journey": {
+    "title": "Moja przygoda",
+    "timeline": {
+      "2019-2020": {
+        "title": "Pierwsze kroki w tworzeniu stron",
+        "description": "Rozpocząłem naukę HTML, CSS i JavaScript. Tworzyłem pierwsze strony internetowe i uczyłem się o responsywnym designie.",
+        "completed": "Ukończyłem kurs",
+        "on": "na platformie",
+        "createdProjects": "Stworzone projekty:",
+        "memoryGame": "Gra Memory",
+        "liveChat": "Aplikacja czatu na żywo",
+        "repo": "Repo",
+        "application": "Aplikacja"
+      },
+      "internship": {
+        "title": "Staż Frontend Developer",
+        "description": "Rozpocząłem staż jako Frontend Developer",
+        "createdProject": "Stworzyłem projekt klona LinkedIn:",
+        "learnedTechnologies": "Poznane technologie:"
+      },
+      "junior": {
+        "title": "Junior Frontend Developer",
+        "description": "Zostałem zatrudniony jako Junior Frontend Developer po udanym stażu",
+        "responsibilities": "Główne obowiązki i osiągnięcia:",
+        "achievements": [
+          "Dołączyłem do zespołu projektowego i nauczyłem się współpracy w zespole",
+          "Opanowałem nowe technologie i narzędzia",
+          "Zacząłem pracować z Redux do zarządzania stanem",
+          "Nauczyłem się korzystać z GitLab do kontroli wersji",
+          "Zapoznałem się z Jirą do zarządzania projektami"
+        ]
+      },
+      "growth": {
+        "title": "Rozwój zawodowy",
+        "description": "Kontynuowałem pracę jako Frontend Developer, rozwijając swoje umiejętności",
+        "achievements": "Główne osiągnięcia i projekty:",
+        "explored": "Poznałem tworzenie aplikacji w React Native i ukończyłem",
+        "created": "Stworzyłem aplikacje fullstack wykorzystując",
+        "and": "oraz",
+        "developed": "Rozwinąłem aplikację społecznościową z websocketami i automatycznymi testami w",
+        "frontend": "Frontend",
+        "backend": "Backend"
+      },
+      "2023-2024": {
+        "title": "Next.js i nowy stack technologiczny",
+        "description": "Odkryłem Next.js, TypeScript i nowoczesne praktyki programistyczne. Tworzyłem nowe projekty z wykorzystaniem najnowszych technologii.",
+        "completedCourses": "Ukończone kursy:",
+        "createdClones": "Stworzyłem klony popularnych aplikacji:"
+      },
+      "current": {
+        "title": "Obecne zainteresowania",
+        "description": "Nadal pracuję w tej samej firmie jako Frontend Developer, szukając nowych możliwości rozwoju zawodowego",
+        "createdApps": "Stworzyłem kilka aplikacji:",
+        "continuing": "Kontynuuję pracę nad umiejętnościami i eksperymentuję z nowymi pomysłami w wolnym czasie, szukając możliwości rozwoju zawodowego"
+      },
+      "projects": {
+        "title": "Aktualne projekty",
+        "date": "2025 - obecnie",
+        "joinedProject": "Dołączyłem do nowego projektu w firmie:",
+        "fullyImplemented": "W pełni zaimplementowałem frontend dla",
+        "medicalChatGPT": "aplikacji medycznej ChatGPT",
+        "features": "Funkcje obejmują: chat, przesyłanie plików, cytowania, modale zgody i internacjonalizację",
+        "focus": "Skupienie na dostępności, SEO i responsywnym designie",
+        "createdWebsites": "Stworzyłem strony internetowe dla znajomych:",
+        "personalTrainer": "Strona trenera personalnego",
+        "firstProject": "Pierwszy projekt wdrożony na zakupionej domenie",
+        "bikeRepair": "Strona warsztatu rowerowego",
+        "focusOn": "Skupienie na czystym kodzie, semantycznym HTML, SEO i zgodności z WCAG",
+        "currentProject": "Aktualny projekt poboczny:",
+        "workingOn": "Pracuję nad",
+        "basedOn": "bazując na",
+        "tutorial": "tutorialu"
+      }
+    }
+  },
+  "skills": {
+    "title": "Moje umiejętności",
+    "advanced": "Zaawansowane",
+    "basic": "Podstawowe"
+  },
+  "portfolio": {
+    "title": "Moje projekty"
+  },
+  "contact": {
+    "linkedin": "Mój LinkedIn",
+    "github": "Mój Github",
+    "title": "Kontakt",
+    "description": "Śmiało napisz do mnie wypełniając formularz poniżej. Odpowiem tak szybko, jak to możliwe.",
+    "footer": "Dziękuję za kontakt! Postaram się odpowiedzieć w ciągu 24-48 godzin.",
+    "form": {
+      "email": {
+        "label": "Adres email",
+        "placeholder": "Wprowadź swój adres email",
+        "description": "Użyję tego adresu email, aby się z Tobą skontaktować."
+      },
+      "message": {
+        "label": "Twoja wiadomość",
+        "placeholder": "Napisz swoją wiadomość tutaj",
+        "description": "Proszę podaj szczegóły dotyczące Twojego zapytania lub wiadomości."
+      },
+      "send": "Wyślij wiadomość",
+      "success": "Wiadomość wysłana pomyślnie!",
+      "errors": {
+        "invalidEmail": "Nieprawidłowy adres email",
+        "emptyMessage": "Wiadomość nie może być pusta"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Michał Jasiński. Wszelkie prawa zastrzeżone."
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "myStory": "Moja historia",
+    "skills": "Umiejętności",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "sidebar": {
+    "title": "Frontend developer"
+  }
+}
