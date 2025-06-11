@@ -16,7 +16,7 @@ const Home = () => {
   const currentProject = PROJECTS[0];
 
   return (
-    <section className="container mx-auto flex flex-col justify-center items-center gap-5 md:gap-16 mt-4 md:mt-0">
+    <section className="container mx-auto flex flex-col justify-center items-center gap-10 md:gap-16 mt-4 md:mt-0">
       <div className="flex gap-5 items-center justify-center flex-col md:flex-row mt-0 md:mt-[calc(33vh-100px)] ">
         <div className="flex items-center md:items-start flex-[0.6] flex-col gap-6 order-2 md:order-1">
           <div className="flex flex-col items-center md:items-start ">
@@ -74,7 +74,7 @@ const Home = () => {
         <Section
           title="Currently working on"
           Icon={FaCode}
-          className="w-[500px]"
+          className="max-w-[500px]"
         >
           <ProjectCard
             title={currentProject.title}

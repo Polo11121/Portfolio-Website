@@ -27,7 +27,8 @@ export const Header = () => {
           showAvatar && "md:justify-between"
         )}
       >
-        <div
+        <Link
+          href="/"
           className={cn(
             "flex md:hidden items-center gap-2",
             showAvatar && "md:flex"
@@ -35,7 +36,7 @@ export const Header = () => {
         >
           <MyAvatar className="w-8 h-8" />
           <p className="order-2 tracking-tight">Michał Jasiński</p>
-        </div>
+        </Link>
         <ul className={cn("flex justify-end", isMobile && "hidden")}>
           {NAVIGATION_LINKS.map(({ href, Icon, label }) => (
             <li key={label}>

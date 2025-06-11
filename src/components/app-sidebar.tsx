@@ -8,12 +8,14 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  useSidebar,
 } from "@/components/ui/sidebar";
 import { usePathname } from "next/navigation";
 import { NAVIGATION_LINKS } from "@/helpers/constants";
 import Link from "next/link";
 
 export const AppSidebar = () => {
+  const { setOpenMobile } = useSidebar();
   const pathname = usePathname();
 
   return (
@@ -28,7 +30,12 @@ export const AppSidebar = () => {
                     asChild
                     variant={pathname === href ? "outline" : "default"}
                   >
-                    <Link href={href}>
+                    <Link
+                      href={href}
+                      onClick={() => {
+                        setOpenMobile(false);
+                      }}
+                    >
                       <Icon />
                       <span>{label}</span>
                     </Link>
