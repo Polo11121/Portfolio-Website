@@ -787,18 +787,7 @@ export const Timeline = () => {
                 {t("journey.timeline.projects.joinedProject")}
               </p>
               <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  {t("journey.timeline.projects.fullyImplemented")}{" "}
-                  <a
-                    href="https://kidney.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-blue-500 font-bold underline hover:text-blue-700 text-sm sm:text-base"
-                  >
-                    Kidney.com
-                  </a>{" "}
-                  {t("journey.timeline.projects.medicalChatGPT")}
-                </li>
+                <li>{t("journey.timeline.projects.medicalChat")} </li>
                 <li>{t("journey.timeline.projects.features")}</li>
                 <li>{t("journey.timeline.projects.focus")}</li>
               </ul>
